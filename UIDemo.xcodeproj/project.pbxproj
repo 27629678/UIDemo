@@ -21,6 +21,11 @@
 		7F1F609F1921F46500FCCBD3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1F60811921F46500FCCBD3 /* UIKit.framework */; };
 		7F1F60A71921F46500FCCBD3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F60A51921F46500FCCBD3 /* InfoPlist.strings */; };
 		7F1F60A91921F46500FCCBD3 /* UIDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1F60A81921F46500FCCBD3 /* UIDemoTests.m */; };
+		7F96F2E719250B72005D34CA /* Attributor_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F96F2E519250B72005D34CA /* Attributor_ViewController.m */; };
+		7F96F2E819250B72005D34CA /* Attributor_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F96F2E619250B72005D34CA /* Attributor_ViewController.xib */; };
+		7FE174661924B47B00F0EBBC /* NSAttributedString_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE174641924B47B00F0EBBC /* NSAttributedString_ViewController.m */; };
+		7FE174671924B47B00F0EBBC /* NSAttributedString_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FE174651924B47B00F0EBBC /* NSAttributedString_ViewController.xib */; };
+		7FE174691924B79F00F0EBBC /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE174681924B79F00F0EBBC /* CoreText.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,13 @@
 		7F1F60A41921F46500FCCBD3 /* UIDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UIDemoTests-Info.plist"; sourceTree = "<group>"; };
 		7F1F60A61921F46500FCCBD3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7F1F60A81921F46500FCCBD3 /* UIDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIDemoTests.m; sourceTree = "<group>"; };
+		7F96F2E419250B72005D34CA /* Attributor_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attributor_ViewController.h; sourceTree = "<group>"; };
+		7F96F2E519250B72005D34CA /* Attributor_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Attributor_ViewController.m; sourceTree = "<group>"; };
+		7F96F2E619250B72005D34CA /* Attributor_ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Attributor_ViewController.xib; sourceTree = "<group>"; };
+		7FE174631924B47B00F0EBBC /* NSAttributedString_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSAttributedString_ViewController.h; sourceTree = "<group>"; };
+		7FE174641924B47B00F0EBBC /* NSAttributedString_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSAttributedString_ViewController.m; sourceTree = "<group>"; };
+		7FE174651924B47B00F0EBBC /* NSAttributedString_ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSAttributedString_ViewController.xib; sourceTree = "<group>"; };
+		7FE174681924B79F00F0EBBC /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FE174691924B79F00F0EBBC /* CoreText.framework in Frameworks */,
 				7F1F60801921F46500FCCBD3 /* CoreGraphics.framework in Frameworks */,
 				7F1F60821921F46500FCCBD3 /* UIKit.framework in Frameworks */,
 				7F1F607E1921F46500FCCBD3 /* Foundation.framework in Frameworks */,
@@ -101,6 +114,7 @@
 		7F1F607C1921F46500FCCBD3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7FE174681924B79F00F0EBBC /* CoreText.framework */,
 				7F1F607D1921F46500FCCBD3 /* Foundation.framework */,
 				7F1F607F1921F46500FCCBD3 /* CoreGraphics.framework */,
 				7F1F60811921F46500FCCBD3 /* UIKit.framework */,
@@ -112,6 +126,7 @@
 		7F1F60831921F46500FCCBD3 /* UIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7FE174571924A99E00F0EBBC /* Examples */,
 				7F1F608C1921F46500FCCBD3 /* NEAppDelegate.h */,
 				7F1F608D1921F46500FCCBD3 /* NEAppDelegate.m */,
 				7F1F608F1921F46500FCCBD3 /* Main.storyboard */,
@@ -150,6 +165,35 @@
 				7F1F60A51921F46500FCCBD3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7F96F2E319250B4F005D34CA /* UITextView */ = {
+			isa = PBXGroup;
+			children = (
+				7F96F2E419250B72005D34CA /* Attributor_ViewController.h */,
+				7F96F2E519250B72005D34CA /* Attributor_ViewController.m */,
+				7F96F2E619250B72005D34CA /* Attributor_ViewController.xib */,
+			);
+			name = UITextView;
+			sourceTree = "<group>";
+		};
+		7FE174571924A99E00F0EBBC /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				7F96F2E319250B4F005D34CA /* UITextView */,
+				7FE174581924A9B200F0EBBC /* NSAttributedString */,
+			);
+			name = Examples;
+			sourceTree = "<group>";
+		};
+		7FE174581924A9B200F0EBBC /* NSAttributedString */ = {
+			isa = PBXGroup;
+			children = (
+				7FE174631924B47B00F0EBBC /* NSAttributedString_ViewController.h */,
+				7FE174641924B47B00F0EBBC /* NSAttributedString_ViewController.m */,
+				7FE174651924B47B00F0EBBC /* NSAttributedString_ViewController.xib */,
+			);
+			name = NSAttributedString;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +244,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = NetEase;
 				TargetAttributes = {
+					7F1F60791921F46500FCCBD3 = {
+						DevelopmentTeam = 86Y5QKVXN9;
+					};
 					7F1F609A1921F46500FCCBD3 = {
 						TestTargetID = 7F1F60791921F46500FCCBD3;
 					};
@@ -229,9 +276,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FE174671924B47B00F0EBBC /* NSAttributedString_ViewController.xib in Resources */,
 				7F1F60961921F46500FCCBD3 /* Images.xcassets in Resources */,
 				7F1F60881921F46500FCCBD3 /* InfoPlist.strings in Resources */,
 				7F1F60911921F46500FCCBD3 /* Main.storyboard in Resources */,
+				7F96F2E819250B72005D34CA /* Attributor_ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +299,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FE174661924B47B00F0EBBC /* NSAttributedString_ViewController.m in Sources */,
+				7F96F2E719250B72005D34CA /* Attributor_ViewController.m in Sources */,
 				7F1F60941921F46500FCCBD3 /* NEViewController.m in Sources */,
 				7F1F608A1921F46500FCCBD3 /* main.m in Sources */,
 				7F1F608E1921F46500FCCBD3 /* NEAppDelegate.m in Sources */,
@@ -377,6 +428,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UIDemo/UIDemo-Prefix.pch";
 				INFOPLIST_FILE = "UIDemo/UIDemo-Info.plist";
@@ -390,6 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UIDemo/UIDemo-Prefix.pch";
 				INFOPLIST_FILE = "UIDemo/UIDemo-Info.plist";
@@ -457,6 +510,7 @@
 				7F1F60AE1921F46500FCCBD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7F1F60AF1921F46500FCCBD3 /* Build configuration list for PBXNativeTarget "UIDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +519,7 @@
 				7F1F60B11921F46500FCCBD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

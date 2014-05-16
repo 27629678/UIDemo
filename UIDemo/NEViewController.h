@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NEViewController : UIViewController
+@interface NEViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
+@property (nonatomic, weak) IBOutlet UITableView* demoTableView;
 @end
