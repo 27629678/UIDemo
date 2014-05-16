@@ -8,6 +8,7 @@
             <connections>
                 <outlet property="body" destination="WE4-Wh-xoO" id="1Ue-0G-psG"/>
                 <outlet property="headline" destination="jhD-n8-Qd1" id="xaQ-G9-Ytu"/>
+                <outlet property="outlineButton" destination="9yp-tg-vVY" id="QLF-a9-iam"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -27,6 +28,7 @@
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9yp-tg-vVY">
                     <rect key="frame" x="13" y="430" width="62" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                     <state key="normal" title="OutLine">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
